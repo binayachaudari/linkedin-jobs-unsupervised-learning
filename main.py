@@ -9,12 +9,13 @@ import time
 # canada_job_url = 'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=data%20scientist%20jobs&location=Canada&start={}'
 
 
-# keyword = "Software%20Development"
-# location = "Canada"
-# job_url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={keyword}&location={location}&start=0"
+keyword = "UN%2Bjobs"
+location = "United%2BStates"
+# job_url = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=UN%2Bjobs&location=United%2BStates&currentJobId=3853050939&start={}"
 
+job_url = "https://www.linkedin.com/jobs/search?keywords=Anesthesiologist&location=United%20States&geoId=103644278&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum={}"
 
-job_url = "https://www.linkedin.com/jobs/search/?currentJobId=3843052859&start={}"
+# job_url = "https://www.linkedin.com/jobs/search/?currentJobId=3856235249&start={}"
 
 # https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Data%2BScience&location=canada&geoId=&trk=public_jobs_jobs-search-bar_search-submit&start=25
 
@@ -24,8 +25,8 @@ job_url = "https://www.linkedin.com/jobs/search/?currentJobId=3843052859&start={
 
 # -- What I noticed is it gives 400 (bad request) for start >= 1000, so we can change the keywords after every 1000
 start = 0
-end = 1000
-per_page=25
+end = 26
+per_page=1
 
 
 job_id_list = list()
